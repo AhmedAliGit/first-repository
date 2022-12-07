@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" ></script>
+    <script> 
+    $(document).ready(function(){
+        $('icon').click(function(){
+          $('ul').toggleclass('show');
+          
+
+    });
+
+    });
+
+    var element ;
+    document.getElementsByClassName("active").innerHTML = "<h1>hero</h1>";
+    element = document.getElementById("icon").getAttribute("style");
+    console.log(element);
+    
+    </script>
+</head>
+<body>
+    <nav>
+        <label class="logo">suffa</label>
+       <ul>
+        
+    <label id="icon">
+        <button onclick="shownav()">
+        <i class="bi bi-list "></i>
+    </button></label>
+        <li> <a class="active" href="#">home</a></li>
+        <li> <a href="#">about</a></li>
+        <li> <a href="#">services</a></li>
+        <li> <a href="#">contact</a></li>
+        <li> <a href="#">feedback</a></li>
+       </ul>
+    </nav>
+    
+</body>
+</html>
